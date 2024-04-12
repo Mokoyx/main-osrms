@@ -113,22 +113,18 @@ const Sidebar = () => {
               >
                 Data
               </Typography>
+              
+              
               <Item
-                title="Manage Team"
-                to="/team"
-                icon={<PeopleOutlinedIcon />}
+                title="Data Entry Form"
+                to="/departmentform"
+                icon={<EditNoteOutlinedIcon />}
                 selected={selected}
                 setSelected={setSelected}
               />
+
               <Item
-                title="Contacts Information"
-                to="/contacts"
-                icon={<ContactsOutlinedIcon />}
-                selected={selected}
-                setSelected={setSelected}
-              />
-              <Item
-                title="Invoices Balances"
+                title="Data Preview"
                 to="/invoices"
                 icon={<ReceiptOutlinedIcon />}
                 selected={selected}
@@ -140,21 +136,31 @@ const Sidebar = () => {
                 color={colors.grey[300]}
                 sx={{ m: "15px 0 5px 20px" }}
               >
-                Pages
+                Management
               </Typography>
 
+             
+
+                <Item
+                title="Team Management"
+                to="/team"
+                icon={<PeopleOutlinedIcon />}
+                selected={selected}
+                setSelected={setSelected}
+              />
+
               <Item
-                title="Profile Form"
+                title="Create User"
                 to="/form"
                 icon={<PersonOutlinedIcon />}
                 selected={selected}
                 setSelected={setSelected}
               />
 
-              <Item
-                title="Report Form"
-                to="/departmentform"
-                icon={<EditNoteOutlinedIcon />}
+                <Item
+                title="Contacts"
+                to="/contacts"
+                icon={<ContactsOutlinedIcon />}
                 selected={selected}
                 setSelected={setSelected}
               />
@@ -167,7 +173,7 @@ const Sidebar = () => {
                 setSelected={setSelected}
               />
               <Item
-                title="FAQ Page"
+                title="Notification"
                 to="/faq"
                 icon={<HelpOutlineOutlinedIcon />}
                 selected={selected}
@@ -179,10 +185,10 @@ const Sidebar = () => {
                 color={colors.grey[300]}
                 sx={{ m: "15px 0 5px 20px" }}
               >
-                Charts
+                Reports
               </Typography>
               <Item
-                title="Bar Chart"
+                title="Bar Chart "
                 to="/bar"
                 icon={<BarChartOutlinedIcon />}
                 selected={selected}
